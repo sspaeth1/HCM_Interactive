@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="text/javascript" src="js/gsap-core.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap"></script>
 
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>HCM</title>
@@ -1025,7 +1027,21 @@
 </svg>
 
 <script type="text/javascript" src="js/devon.js"></script>      
+<script>
+    let fadeOnDuration = 1;
 
+    gsap.to('#post-Test_Box', fadeOnDuration, {opacity: 1});
+    gsap.to(['#panel_types', '#B1_2_'], fadeOnDuration, {opacity: 1}).delay(1);
+    gsap.to('#A1_2_', fadeOnDuration, {opacity: 1}).delay(2);
+    gsap.to('#A2_2_', fadeOnDuration, {opacity: 3}).delay(3);
+    gsap.to('#C4_2_', fadeOnDuration, {opacity: 3}).delay(4);
+    gsap.to('#C3_2_', fadeOnDuration, {opacity: 3}).delay(5);
+    gsap.to('#C2_2_', fadeOnDuration, {opacity: 3}).delay(6);
+    gsap.to('#C1_2_', fadeOnDuration, {opacity: 3}).delay(7);
+    gsap.to('#revealCircle', fadeOnDuration, {opacity: 3}).delay(8);
+    gsap.to('#instructions', fadeOnDuration, {opacity: 3}).delay(9);
+</script>
+  
 
 
     

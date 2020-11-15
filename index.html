@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- <script type="text/javascript" src="./js/gsap-core.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap"></script>
     <script type="text/javascript" src="js/devon.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Interactive Graphic</title>
@@ -732,7 +733,27 @@
      
 
     
+<script>
+ 
 
+// gsap.to('use.pretest_genetic_counceling', 2,{rotation: 360, transformOrigin:" 50% 50%"});
+
+let fadeOnDuration = 1;
+
+
+// gsap.to('.rect1', 30, {opacity: 1, rotation: 3000, transformOrigin:" 20% 20%"});
+
+gsap.to('use._2_diagnostics', fadeOnDuration, {opacity: 1, rotation:360});
+gsap.to('use.pretest_genetic_counceling', fadeOnDuration, {opacity: 1}).delay(1.5);
+gsap.to('use._1-2_years_or_sooner', fadeOnDuration, {opacity: 1}).delay(2.5);
+gsap.to('#primary_panel', fadeOnDuration, {opacity: 3}).delay(4);
+gsap.to('#instructions', fadeOnDuration, {opacity: 3}).delay(5);
+gsap.to('#btns', fadeOnDuration, {opacity: 3}).delay(6.25);
+
+
+
+
+</script>
 
     
 </body>
