@@ -113,3 +113,11 @@ svg
   max-width: 75%;
 }
 
+.btnHover{
+  opacity: 0;
+}
+.btnHover:hover{
+  opacity: .5;
+}
+
+
