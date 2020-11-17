@@ -100,7 +100,7 @@ svg
   color:rgb(219, 161, 161);
 }
 
-.fallback a:hover, .backNav a:hover{
+.fallback a:hover{
   color:rgb(131, 10, 10);
 }
 
@@ -149,6 +149,10 @@ svg
   position: relative;
   left:10%;
   margin-right: 5px;
+}
+
+.backNav a:hover{
+  color:#1F4388;
 }
 
 .backNav span{
