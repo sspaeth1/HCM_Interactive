@@ -31,7 +31,9 @@ svg
 {
   font-family : "FranklinGothic-Book" , serif;
   width: 100%;
-  height: 100vh;
+  position: absolute;
+  top:0;
+  max-height: 100vh;
 }
 
 .st0{fill:none;stroke:#5CA5DB;stroke-miterlimit:10;}
@@ -94,11 +96,11 @@ svg
   font-size:.8rem;
 }
 
-.fallback a{
+.fallback a, .fallback a:visited {
   color:rgb(219, 161, 161);
 }
 
-.fallback a:hover{
+.fallback a:hover, .backNav a:hover{
   color:rgb(131, 10, 10);
 }
 
@@ -113,12 +115,57 @@ svg
   max-width: 75%;
 }
 
+.fallbackImg:first-of-type{
+  margin-top: 2%;
+}
+
 .btnHover{
   opacity: 0;
 }
-.btnHover:hover{
+
+.backNav{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height:60px;
+  box-shadow: 2px 2px 2px rgb(114, 143, 148);
+  background-color: rgb(207, 225, 245);
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: sticky;
+  top:0;
+}
+
+.backNav a{
+  font-weight: 400; 
+  border: 1px solid #1F4388 ;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #5CA5DB ;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  left:10%;
+  margin-right: 5px;
+}
+
+.backNav span{
+  position: absolute;
+  right:15%;
+  font-size: 1rem;
+  max-width:50%;
+  padding: 3px;
+}
+
+
+@media screen and (min-width: 600px){
+  .btnHover:hover{
   opacity: .5;
 }
+}
+
 
 
 .tooltipster-sidetip.tooltipster-punk .tooltipster-box {
@@ -340,7 +387,7 @@ svg
 }
 .tooltipster-sidetip .tooltipster-content {
     color: #fff;
-    line-height: 18px;
+    line-height: 19px;
     padding: 6px 14px;
 }
 .tooltipster-sidetip .tooltipster-arrow {
